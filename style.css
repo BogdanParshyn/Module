@@ -1,0 +1,125 @@
+body{
+    background-color: #3e3b4a;
+    font-family: 'OpenSans-Bold', 'Times-Roman', 'AdobeInvisFont', 'MyriadPro-Regular';
+}
+
+.clear {
+    clear: both;
+}
+
+.container{
+    width: 1020px;
+    margin:0 auto;
+    align-items:center;
+    
+}
+
+/* header */
+header .container{
+    height: 204px;   
+    background-color: red;
+    
+}
+
+.menu-i{
+    display: inline-block;
+    padding: 91px 0px 0px 0px;
+    margin: 0;
+    float: left; /* Выравнивание лого по левому краю, 
+    все остальные элементы обтекают его справа */
+}
+
+.menu-text{
+    display: inline-block;
+    padding: 94px 0px 0px 10px;
+    font-size: 12px;
+    text-decoration: none;
+    color: #85828d;
+    float: left;
+}
+
+.head-logo{
+    
+    
+    
+    
+    
+}
+.DMT{
+    display: inline-block;
+    text-decoration: none;
+    color: #ffffff;
+    float: left;
+    font-size: 48px;
+    
+    
+    
+}
+
+.d-m-t{
+    display: inline-block;
+    float: left;
+    text-decoration: none;
+    color: #85828d;
+}
+
+.search-text{
+    display: inline-block;
+    padding: 94px 0px 0px 10px;
+    font-size: 12px;
+    text-decoration: none;
+    color: #85828d;
+    float: left;
+}
+
+.searsh-i{
+    display: inline-block;
+    padding: 89px 0px 0px 0px;
+    margin: 0;
+    float: right; /* Выравнивание лого по левому краю, 
+    все остальные элементы обтекают его справа */
+}
+
+
+
+
+.slider .container{
+    background: url(./img/square1-bg.jpg) no-repeat center center;
+    height: 512px;
+
+}
+
+
+
+
+
+
+.menu-1{
+    background: url(./img/square2-bg.png) no-repeat center center;
+    height: 487px;
+    float: left;
+}
+
+.menu-2{
+    background: #eb7b61 no-repeat center center;
+    height: 487px;
+    float: left;
+}
+
+.menu-3{
+    background: url(./img/square4-bg.jpg) no-repeat center center;
+    height: 487px;
+    float: left;
+}
+
+.menu-4{
+    background: url(./img/square5-bg.jpg) no-repeat center center;
+    height: 487px;
+    float: left;
+}
+
+.menu-5{
+    background: url(./img/square6-bg.png) no-repeat center center;
+    height: 487px;
+    float: left;
+}
