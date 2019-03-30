@@ -22,7 +22,7 @@ header .container{
 }
 
 .menu-i{
-    display: inline-block;
+    
     padding: 91px 0px 0px 0px;
     margin: 0;
     float: left; /* Выравнивание лого по левому краю, 
@@ -30,7 +30,7 @@ header .container{
 }
 
 .menu-text{
-    display: inline-block;
+    
     padding: 94px 0px 0px 10px;
     font-size: 12px;
     text-decoration: none;
@@ -39,14 +39,14 @@ header .container{
 }
 
 .head-logo{
-    
+      
     
     
     
     
 }
 .DMT{
-    display: inline-block;
+    
     text-decoration: none;
     color: #ffffff;
     float: left;
@@ -57,14 +57,14 @@ header .container{
 }
 
 .d-m-t{
-    display: inline-block;
+    
     float: left;
     text-decoration: none;
     color: #85828d;
 }
 
 .search-text{
-    display: inline-block;
+    
     padding: 94px 0px 0px 10px;
     font-size: 12px;
     text-decoration: none;
@@ -73,7 +73,7 @@ header .container{
 }
 
 .searsh-i{
-    display: inline-block;
+    
     padding: 89px 0px 0px 0px;
     margin: 0;
     float: right; /* Выравнивание лого по левому краю, 
@@ -92,34 +92,66 @@ header .container{
 
 
 
+menu{
+    margin:0;
+    padding:0;
+}
 
+menu ul{
+    list-style-type: none;
+    margin:0;
+    padding:0;
+}
 
 .menu-1{
-    background: url(./img/square2-bg.png) no-repeat center center;
-    height: 487px;
+    background: url(./img/square2-bg.png) no-repeat top right;
+    height: 484px;
+    width: 622px;
     float: left;
+    background-color: #70b7c3;
+    margin: 20px 20px 0px 0px;
 }
 
 .menu-2{
     background: #eb7b61 no-repeat center center;
-    height: 487px;
+    height: 484px;
+    width: 378px;
     float: left;
+    margin: 20px 0px 0px 0px;
 }
 
 .menu-3{
     background: url(./img/square4-bg.jpg) no-repeat center center;
-    height: 487px;
+    height: 420px;
+    width: 260px;
     float: left;
+    margin: 20px 20px 0px 0px;
+    
+    
 }
 
 .menu-4{
     background: url(./img/square5-bg.jpg) no-repeat center center;
-    height: 487px;
+    height: 420px;
+    width: 260px;
     float: left;
+    margin: 20px 20px 0px 0px;
 }
 
 .menu-5{
-    background: url(./img/square6-bg.png) no-repeat center center;
-    height: 487px;
+    background: url(./img/square6-bg.png) no-repeat bottom right;
+    background-color: #1ab467;
+    height: 420px;
+    width: 460px;
     float: left;
+    margin: 20px 0px 0px 0px;
+}
+
+
+
+/* footer */
+
+footer .container{
+    height: 139px;   
+    background-color: red;
 }
