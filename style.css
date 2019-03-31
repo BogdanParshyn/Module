@@ -1,97 +1,191 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:400,700');
+
 body{
     background-color: #3e3b4a;
-    font-family: 'OpenSans-Bold', 'Times-Roman', 'AdobeInvisFont', 'MyriadPro-Regular';
+    font-family: 'Open Sans', sans-serif;
+    animation: color-me-in 25s ;
+    animation-iteration-count: infinite;
 }
+  
+/* body анимация */
+        @keyframes color-me-in {
+    
+            0% {	
+                background: #3e3b4a;
+            }
+
+            30% {	
+                background: yellow;
+            }
+ 
+            50% {	
+                background: green;
+            }
+    
+            75% {
+                background: blue;
+            }
+
+            100% {	
+                background: #3e3b4a;
+            }
+        }
 
 .clear {
     clear: both;
 }
 
-.container{
-    width: 1020px;
-    margin:0 auto;
-    align-items:center;
-    
+.read a{
+    font-weight: 700;
+    font-size: 20px;
+    text-decoration: none;
+    color: #ffffff;
+    border: 3px solid #ffe18f;
+    padding: 5px 5px 7px 7px;
+    margin: 0px 0px 39px 41px;
 }
 
-/* header */
+        /* read a анимация */
+        .read a{
+            animation-name: blinker;
+            animation-iteration-count: infinite;
+            animation-duration: 3s;
+        }
+
+        @keyframes blinker {
+            from { opacity: 1.0; }
+            to { opacity: 0.3; background: red; font-size: 32px; }
+        }
+
+.review a{
+    font-weight: 700;
+    font-size: 20px;
+    text-decoration: none;
+    color: #3d3c4a;
+    background: #ffe18e;
+    padding: 5px 10px 7px 12px;
+    margin: 0px 0px 39px 84px;
+}
+
+.Your-email a{
+    font-size: 20px;
+    text-decoration: none;
+    border: 3px solid #ffffff;
+    color: #ffffff;
+    padding: 8px 87px 12px 85px;
+    font-weight: 700;
+}
+
+.subscribe a{
+    font-size: 20px;
+    text-decoration: none;
+    color: #ffffff;
+    padding: 13px 98px 13px 90px;
+    background: #66689c;
+    font-weight: 700;
+}
+
+a:hover{    
+    color: #ce969d;
+    background: #2c2966;
+}
+
+.container{
+    width: 1020px;
+    margin: 0 auto;
+    align-items: center;
+}
+
+
+
+/* 1 header */
 header .container{
     height: 204px;   
-    background-color: red;
-    
 }
 
 .menu-i{
-    
-    padding: 91px 0px 0px 0px;
-    margin: 0;
-    float: left; /* Выравнивание лого по левому краю, 
-    все остальные элементы обтекают его справа */
+    margin-top: 91px; 
+    float: left; 
 }
 
-.menu-text{
-    
-    padding: 94px 0px 0px 10px;
+.menu-text a{
+    margin-top: 92px; 
+    margin-left: 10px;
+    margin-right: 381px; 
     font-size: 12px;
     text-decoration: none;
     color: #85828d;
     float: left;
 }
 
-.head-logo{
-      
-    
-    
-    
-    
+.head-logo{  
+    margin-top: 52px;
+    text-align: center; 
+    float: left; 
 }
+
 .DMT{
-    
     text-decoration: none;
     color: #ffffff;
-    float: left;
-    font-size: 48px;
-    
-    
-    
+    font-size: 48px; 
 }
 
 .d-m-t{
-    
-    float: left;
     text-decoration: none;
     color: #85828d;
+    font-size: 13px;
 }
 
 .search-text{
-    
-    padding: 94px 0px 0px 10px;
     font-size: 12px;
     text-decoration: none;
     color: #85828d;
     float: left;
+    margin-top: 92px; 
+    margin-left: 380px; 
 }
 
 .searsh-i{
-    
-    padding: 89px 0px 0px 0px;
-    margin: 0;
-    float: right; /* Выравнивание лого по левому краю, 
-    все остальные элементы обтекают его справа */
+    margin-left: 11px; 
+    margin-top: 89px; 
+    float: right;
 }
 
-
-
+/* 2 slider */
 
 .slider .container{
     background: url(./img/square1-bg.jpg) no-repeat center center;
     height: 512px;
-
 }
 
+/* 2 slider 1 */
 
+.slider-home{
+    font-size: 14px;
+    font-weight: 700;
+    color: #ffc7b0;
+    padding: 39px 0px 0px 42px;
+    letter-spacing: 4px;
+}
 
+.slider-buster{
+    font-size: 72px;
+    font-weight: 700;
+    color: #ffffff;
+    margin: 0px 0px 0px 39px;
+    padding: 0;
+    line-height: 1.1;
+}
 
+.slider-firstd{
+    font-size: 36px;
+    font-weight: 400;
+    color: #ffffff;
+    padding: 0px 0px 76px 39px;
+    width: 320px;   
+}
+
+/* 3 menu */
 menu{
     margin:0;
     padding:0;
@@ -103,55 +197,250 @@ menu ul{
     padding:0;
 }
 
+li{
+    float: left;
+}
+
+/* 3 menu 1 */
+
 .menu-1{
     background: url(./img/square2-bg.png) no-repeat top right;
+    background-color: #70b7c3;
     height: 484px;
     width: 622px;
-    float: left;
-    background-color: #70b7c3;
     margin: 20px 20px 0px 0px;
 }
+
+.acces{
+    font-size: 14px;
+    font-weight: 700;
+    color: #ffc7b0;
+    padding: 37px 0px 0px 41px;
+    letter-spacing: 4px;
+}
+
+.peak{
+    font-size: 48px;
+    font-weight: 700;
+    color: #ffffff;
+    margin: 0px 0px 0px 41px;
+    padding: 0;
+}
+
+.playful{
+    font-size: 24px;
+    font-weight: 400;
+    color: #ffffff;
+    padding: 0px 0px 190px 36px;
+    width: 320px;   
+}
+
+/* 3 menu 2 */
 
 .menu-2{
     background: #eb7b61 no-repeat center center;
     height: 484px;
     width: 378px;
-    float: left;
     margin: 20px 0px 0px 0px;
+    
+    text-align: center;
+    color: #ffffff;
 }
+
+.good{
+    font-size: 48px;
+    padding: 70px 0px 0px 0px;
+    font-family: 'Times-Roman';
+}
+
+.come{
+    font-size: 24px;
+    padding: 0px 0px 42px 0px;
+    font-family: 'Times-Roman';
+}
+
+.subscribe{
+    padding: 50px 0px  40px 0px;
+}
+
+/* 3 menu 3 */
 
 .menu-3{
     background: url(./img/square4-bg.jpg) no-repeat center center;
     height: 420px;
     width: 260px;
-    float: left;
-    margin: 20px 20px 0px 0px;
-    
-    
+    margin: 20px 20px 0px 0px;  
 }
+
+.cameras3{
+    font-size: 14px;
+    font-weight: 700;
+    color: #ffc7b0;
+    padding: 34px 0px 0px 84px;
+    letter-spacing: 4px;
+}
+
+.leica-M{
+    font-size: 36px;
+    font-weight: 700;
+    color: #ffffff;
+    top: 170px;
+    padding: 0;
+    text-align: center;
+    margin: 127px 0px 111px 0px;
+}
+
+/* 3 menu 4 */
 
 .menu-4{
     background: url(./img/square5-bg.jpg) no-repeat center center;
     height: 420px;
     width: 260px;
-    float: left;
     margin: 20px 20px 0px 0px;
 }
+
+.sound{
+    font-size: 14px;
+    font-weight: 700;
+    color: #ffc7b0;
+    padding: 34px 0px 0px 97px;
+    letter-spacing: 4px;
+}
+
+.trobla{
+    font-size: 36px;
+    font-weight: 700;
+    color: #ffffff;
+    top: 170px;
+    padding: 0;
+    text-align: center;
+    margin: 101px 0px 90px 0px;
+}
+
+/* 3 menu 5 */
 
 .menu-5{
     background: url(./img/square6-bg.png) no-repeat bottom right;
     background-color: #1ab467;
     height: 420px;
     width: 460px;
-    float: left;
     margin: 20px 0px 0px 0px;
+}
+
+.cameras5{
+    font-size: 14px;
+    font-weight: 700;
+    color: #ffc7b0;
+    padding: 36px 0px 0px 43px;
+    letter-spacing: 4px;
+}
+
+.leica-D{
+    font-size: 36px;
+    font-weight: 700;
+    color: #ffffff;
+    margin: 0px 0px 0px 43px;
+    padding: 0;
+}
+
+.limeted{
+    font-size: 20px;
+    font-weight: 400;
+    color: #ffffff;
+    padding: 0px 0px 185px 43px;
+    width: 320px;   
+}
+
+/* 4 footer */
+
+footer .container{
+    height: 139px;   
+}
+
+.footer-copyright{
+    font-weight: 400;
+    margin-top: 56px;
+    font-size: 14px;
+    text-decoration: none;
+    color: #85828d;
+    float: left;
+}
+
+.footer-link{
+    color: #85828d;
+}
+
+.link-fb{
+    margin-left: 865px;
+    margin-top: 50px;
+    margin-right: 21px;
+    float: left;
+}
+
+.link-tw{
+    
+    margin-top: 53px;
+    float: left;
 }
 
 
 
-/* footer */
+/* 5 media */
 
-footer .container{
-    height: 139px;   
-    background-color: red;
+@media (max-width: 1080px){
+
+    .slider{
+        width: 100%;
+        margin: 0 auto;
+    }
+
+    menu .container{
+        margin: 0 auto;
+    }
+
+}
+
+@media (max-width: 960px){
+
+    .slider, menu .container{
+        margin: 0 auto;
+    }
+
+}
+
+@media (max-width: 640px){
+
+    .slider, menu .container{
+        margin: 0 auto;
+    }
+
+    a{
+        font-size: 10px;
+        padding: 0;
+    }
+
+}
+
+@media (max-width: 360px){
+
+    .DMT{
+        font-size: 30px;
+    }
+
+    .menu-text, .d-m-tб, .search-text{
+        font-size: 8px;
+    }
+    
+    .slider-buster{
+        font-size: 40px;
+    }
+
+    .peak, .good, .leica-M, .trobla, .leica-D{
+        font-size: 30px;
+    }
+    
+    .footer-copyright{
+        font-size: 10px;
+    }
+
 }
