@@ -5,34 +5,8 @@
 body{
     background-color: #3e3b4a;
     font-family: 'Open Sans', sans-serif;
-    /* body анимация */
-    animation: color-me-in 25s ;
-    animation-iteration-count: infinite;
+    
 }
-  
-/* body анимация */
-        @keyframes color-me-in {
-    
-            0% {	
-                background: #3e3b4a;
-            }
-
-            30% {	
-                background: yellow;
-            }
- 
-            50% {	
-                background: green;
-            }
-    
-            75% {
-                background: blue;
-            }
-
-            100% {	
-                background: #3e3b4a;
-            }
-        }
 
 /* обнуление */        
 .clear {
@@ -47,7 +21,7 @@ body{
     color: #ffffff;
     border: 3px solid #ffe18f;
     padding: 5px 5px 7px 7px;
-    margin: 0px 0px 39px 41px;
+    margin: 0px 0px 39px 0px;
     /* read a анимация */
     animation-name: blinker;
     animation-iteration-count: infinite;
@@ -57,7 +31,7 @@ body{
         /* read a анимация */
         @keyframes blinker {
             from { opacity: 1.0; }
-            to { opacity: 0.3; background: red; font-size: 32px; }
+            to { opacity: 0.3; background: #3d3c4a;}
         }
 
 .review a{
@@ -75,7 +49,7 @@ body{
     text-decoration: none;
     border: 3px solid #ffffff;
     color: #ffffff;
-    padding: 8px 87px 12px 85px;
+    padding: 3px 87px 6px 85px;
     font-weight: 700;
 }
 
@@ -83,7 +57,7 @@ body{
     font-size: 20px;
     text-decoration: none;
     color: #ffffff;
-    padding: 13px 98px 13px 90px;
+    padding: 7px 98px 8px 90px;
     background: #66689c;
     font-weight: 700;
 }
@@ -164,11 +138,15 @@ header .container{
     height: 512px;
 }
 
+.slider .container div{
+    padding-left: 41px;  
+}
+
 .slider-home{
     font-size: 14px;
     font-weight: 700;
     color: #ffc7b0;
-    padding: 39px 0px 0px 42px;
+    padding: 39px 0px 10px 0px;
     letter-spacing: 4px;
 }
 
@@ -176,8 +154,6 @@ header .container{
     font-size: 72px;
     font-weight: 700;
     color: #ffffff;
-    margin: 0px 0px 0px 39px;
-    padding: 0;
     line-height: 1.1;
 }
 
@@ -185,7 +161,7 @@ header .container{
     font-size: 36px;
     font-weight: 400;
     color: #ffffff;
-    padding: 0px 0px 76px 39px;
+    padding: 10px 0px 85px 0px;
     width: 320px;   
 }
 
@@ -215,13 +191,18 @@ li{
     height: 484px;
     width: 622px;
     margin: 20px 20px 0px 0px;
+    
+}
+
+.menu-1 div{
+    padding-left: 36px;
 }
 
 .acces{
     font-size: 14px;
     font-weight: 700;
     color: #ffc7b0;
-    padding: 37px 0px 0px 41px;
+    padding-top: 37px;
     letter-spacing: 4px;
 }
 
@@ -229,15 +210,15 @@ li{
     font-size: 48px;
     font-weight: 700;
     color: #ffffff;
-    margin: 0px 0px 0px 41px;
-    padding: 0;
+    line-height: 1.5;
+    
 }
 
 .playful{
     font-size: 24px;
     font-weight: 400;
     color: #ffffff;
-    padding: 0px 0px 190px 36px;
+    padding: 0px 0px 205px 0px;
     width: 320px;   
 }
 
@@ -253,6 +234,10 @@ li{
     color: #ffffff;
 }
 
+.menu-2:hover{
+    background:#70b7c3;
+}
+
 .good{
     font-size: 48px;
     padding: 70px 0px 0px 0px;
@@ -266,7 +251,7 @@ li{
 }
 
 .subscribe{
-    padding: 50px 0px  40px 0px;
+    padding: 47px 0px  38px 0px;
 }
 
 /* 3 menu 3 */
@@ -291,9 +276,8 @@ li{
     font-weight: 700;
     color: #ffffff;
     top: 170px;
-    padding: 0;
     text-align: center;
-    margin: 127px 0px 111px 0px;
+    padding: 127px 0px 130px 0px;
 }
 
 /* 3 menu 4 */
@@ -318,9 +302,8 @@ li{
     font-weight: 700;
     color: #ffffff;
     top: 170px;
-    padding: 0;
     text-align: center;
-    margin: 101px 0px 90px 0px;
+    padding: 101px 0px 115px 0px;
 }
 
 /* 3 menu 5 */
@@ -333,11 +316,15 @@ li{
     margin: 20px 0px 0px 0px;
 }
 
+.menu-5 div{
+    padding-left: 43px;
+}
+
 .cameras5{
     font-size: 14px;
     font-weight: 700;
     color: #ffc7b0;
-    padding: 36px 0px 0px 43px;
+    padding-top: 36px;
     letter-spacing: 4px;
 }
 
@@ -345,15 +332,13 @@ li{
     font-size: 36px;
     font-weight: 700;
     color: #ffffff;
-    margin: 0px 0px 0px 43px;
-    padding: 0;
 }
 
 .limeted{
     font-size: 20px;
     font-weight: 400;
     color: #ffffff;
-    padding: 0px 0px 185px 43px;
+    padding-bottom: 210px;
     width: 320px;   
 }
 
@@ -436,7 +421,7 @@ footer .container{
     .peak, .good, .leica-M, .trobla, .leica-D{
         font-size: 30px;
     }
-
+}
     
 
 @media (max-width: 360px){
@@ -462,14 +447,13 @@ footer .container{
 
     .DMT{
         font-size: 30px;
-
     }
 
     .search-text{
         margin-left: 46px; 
     }
 
-    .menu-text, .d-m-tб, .search-text{
+    .menu-text, .d-m-t, .search-text{
         font-size: 8px;
     }
     
@@ -487,7 +471,5 @@ footer .container{
 
     .link-fb{
         margin-left: 233px;
-        
     }
-
 }
